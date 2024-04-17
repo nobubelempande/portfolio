@@ -1,31 +1,28 @@
 import { makeStyles } from '@material-ui/core';
 import React from 'react';
 import "../App.css";
+import HeroSection from '../components/HeroSection';
 
 
 const useStyles = makeStyles((theme) => ({
   menuItems: {
-    cursor: 'pointer', 
+    cursor: 'pointer',
   },
   menuContainer: {
     display: 'flex',
     justifyContent: 'center',
-    width: '100%', 
+    width: '100%',
   },
 }));
 
 
 function HomePage() {
-    const classes = useStyles();
-    return (
-      <div className="App">
-       
-      
-     <div>
-        Home
-     </div>
-      </div>
-    );
+  const classes = useStyles();
+  return (
+    <div className="App">
+      <HeroSection />
+    </div>
+  );
 }
 
 export default HomePage;

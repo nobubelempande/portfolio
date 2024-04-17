@@ -9,12 +9,12 @@ import { default as Portfolio } from './pages/Portfolio';
 
 const useStyles = makeStyles((theme) => ({
   menuItems: {
-    cursor: 'pointer', 
+    cursor: 'pointer',
   },
   menuContainer: {
     display: 'flex',
     justifyContent: 'center',
-    width: '100%', 
+    width: '100%',
   },
 }));
 
@@ -23,27 +23,27 @@ const App = () => {
   const classes = useStyles();
   return (
     <Router>
-        <AppBar position="static" style={{backgroundColor:'#66BFBF' }}>
-    <Container maxWidth="xl">
-      <Toolbar disableGutters>
-        <div className={classes.menuContainer}>
-          <Link to="/" className={classes.menuItems}>home</Link>
-          <Link to="/about" className={classes.menuItems}>about</Link>
-          <Link to="/portfolio" className={classes.menuItems}>portfolio</Link>
-          <Link to="/blog" className={classes.menuItems}>blog</Link>
-        </div>
-      </Toolbar>
-    </Container>
-  </AppBar>
-     
-  <Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="/about" element={<About />} />
-    <Route path="/portfolio" element={<Portfolio />} />
- 
-  </Routes>
-      
-      </Router>
+      <AppBar position="static" style={{ backgroundColor: 'white' }}>
+        <Container maxWidth="xl">
+          <Toolbar disableGutters>
+            <div className={classes.menuContainer}>
+              <Link to="/" className={classes.menuItems}>home</Link>
+              <Link to="/about" className={classes.menuItems}>about</Link>
+              <Link to="/portfolio" className={classes.menuItems}>portfolio</Link>
+              <Link to="/blog" className={classes.menuItems}>blog</Link>
+            </div>
+          </Toolbar>
+        </Container>
+      </AppBar>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+
+      </Routes>
+
+    </Router>
 
   );
 };
