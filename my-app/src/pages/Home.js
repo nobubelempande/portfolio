@@ -19,9 +19,9 @@ const useStyles = makeStyles((theme) => ({
 function HomePage() {
   const classes = useStyles();
   return (
-    <div className="App">
-      <HeroSection />
-    </div>
+
+    <HeroSection />
+
   );
 }
 

@@ -21,6 +21,12 @@ const useStyles = makeStyles((theme) => ({
 
 const App = () => {
   const classes = useStyles();
+  const scrollToAboutSection = () => {
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <Router>
       <AppBar position="static" style={{ backgroundColor: 'white' }}>
@@ -28,7 +34,8 @@ const App = () => {
           <Toolbar disableGutters>
             <div className={classes.menuContainer}>
               <Link to="/" className={classes.menuItems}>home</Link>
-              <Link to="/about" className={classes.menuItems}>about</Link>
+              <a href="#about" className={classes.menuItems} onClick={scrollToAboutSection}>about</a>
+
               <Link to="/portfolio" className={classes.menuItems}>portfolio</Link>
               <Link to="/blog" className={classes.menuItems}>blog</Link>
             </div>
