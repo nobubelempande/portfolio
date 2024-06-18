@@ -2,6 +2,8 @@ import { makeStyles } from '@material-ui/core';
 import React from 'react';
 import "../App.css";
 import HeroSection from '../components/HeroSection';
+import Footer from '../molecules/Footer';
+import AboutPage from './About';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -20,7 +22,10 @@ function HomePage() {
   const classes = useStyles();
   return (
 
-    <HeroSection />
+    <><HeroSection />
+    <AboutPage/>
+    <Footer/></>
+    
 
   );
 }
