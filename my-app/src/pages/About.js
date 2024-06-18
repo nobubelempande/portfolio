@@ -45,7 +45,7 @@ function AboutPage() {
     >
       <div 
         style={{
-          background: '#8FC1C1',
+          background: '#A9C6C6',
           margin: '50px 0', 
           display: 'flex',
           width: '80%', 
