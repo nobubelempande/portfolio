@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
   },
   menuContainer: {
     display: 'flex',
-    justifyContent: 'center',
+    justifyContent: 'right',
     width: '100%',
   },
 }));
@@ -29,14 +29,13 @@ const App = () => {
   };
   return (
     <Router>
-      <AppBar position="static" style={{ backgroundColor: 'white' }}>
+      <AppBar position="sticky" style={{ backgroundColor: 'white' }}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <div className={classes.menuContainer}>
               <Link to="/" className={classes.menuItems}>home</Link>
               <a href="#about" className={classes.menuItems} onClick={scrollToAboutSection}>about</a>
-
-              <Link to="/portfolio" className={classes.menuItems}>portfolio</Link>
+              <a href="#portfolio" className={classes.menuItems} onClick={scrollToAboutSection}>portfolio</a>
               <Link to="/blog" className={classes.menuItems}>blog</Link>
             </div>
           </Toolbar>

@@ -26,7 +26,7 @@ function HeroSection() {
                                 <div style={{ fontSize: '1.5em', fontFamily: 'Merriweather, serif', marginBottom: '30px', color: 'white' }}>
                                     <TypeAnimation
                                         sequence={[
-                                            "A developer, data scientist, and creative. I specialize in web and app development, social media marketing, and data analysis.",
+                                            "A developer, data scientist, and creative. I specialize in web and app development, content creation, and anything data related.",
                                             1000,
                                         ]}
                                         speed={50} />

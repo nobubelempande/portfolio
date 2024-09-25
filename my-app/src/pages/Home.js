@@ -4,6 +4,7 @@ import "../App.css";
 import HeroSection from '../components/HeroSection';
 import Footer from '../molecules/Footer';
 import AboutPage from './About';
+import PortfolioPage2 from './Portfolio copy';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -24,6 +25,7 @@ function HomePage() {
 
     <><HeroSection />
     <AboutPage/>
+    <PortfolioPage2/>
     <Footer/></>
     
 
